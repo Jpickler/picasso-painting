@@ -1,3 +1,23 @@
 *{
-  background-color: blue;
+  background-color: whitesmoke;
+}
+.footer{
+  position: fixed;
+  left: 5;
+  bottom: 0;
+  width: 100%;
+}
+#frame{
+  width: 1200;
+  height: 800;
+  background-color: bisque;
+  z-index: -50;
+}
+
+#sun{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+  z-index: -30;
 }
