@@ -1,23 +1,152 @@
 *{
   background-color: whitesmoke;
 }
+
+
+/* for computer*/
+@media screen and (min-width: 1025px) {
+  body {
+    /* background-color: rgb(41, 60, 207); */
+    #frame{
+      flex:50%;
+      width: 400px;
+      height: 400px;
+    }
+    .tree{
+      border-left: 25px solid bisque;
+      border-right: 25px solid bisque;
+      border-bottom: 50px solid green;
+    }
+  }
+}
+
+/* for ipad */
+@media screen and (max-width: 1024px) {
+  body {
+    /* background-color: rgb(72, 246, 24); */
+    #frame{
+      flex:50%;
+      width: 300px;
+      height: 300px;
+    }
+    .tree{
+      border-left: 15px solid bisque;
+      border-right: 15px solid bisque;
+      border-bottom: 30px solid green;
+    }
+  }
+}
+
+/* for mobile */
+@media screen and (max-width: 480px) {
+  body {
+    /* background-color: rgb(214, 47, 80); */
+    #frame{
+      flex:50%;
+      width: 200px;
+      height: 200px; 
+    }
+    .tree{
+      border-left: 7px solid bisque;
+      border-right: 7px solid bisque;
+      border-bottom: 14px solid green;
+    }
+  }
+}
+
 .footer{
   position: fixed;
   left: 5;
   bottom: 0;
   width: 100%;
 }
+#painting{
+  padding-top: 1%;
+}
 #frame{
-  width: 1200;
-  height: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items:top;
+  position:relative;
+  /* moved these lines to media 
+  width: 90%;
+  height: 90%;  */
   background-color: bisque;
+  padding: 100%
   z-index: -50;
 }
 
 #sun{
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 20%;
   background: yellow;
   border-radius: 50%;
-  z-index: -30;
+  z-index: 1;
+  position: relative;
+  top:1%;
+  left:1%;
+  border: 0px;
+  margin: 0px;
+
+
 }
+
+.tree{
+  border-left: 25px solid bisque;
+  border-right: 25px solid bisque;
+  border-bottom: 50px solid green;
+  z-index: 1;
+  border: 1%;
+  margin: 1%;
+  } 
+#tree1{
+  width: 0%;
+  height: 8%;
+  position:relative;
+  top: 60%;
+  left:2%;
+
+}
+ #tree2{
+  width: 0%;
+  height: 15%;
+  position:relative;
+  top: 60%;
+  left:3%;
+}
+#tree3{
+  width: 0%;
+  height: 19%;
+  position:relative;
+  top: 45%;
+  left:5%;
+} 
+
+#cabin{
+  width:20%;
+  height:10%;
+  background-color: brown;
+  z-index: 1;
+  position:relative;
+  top: 80%;
+  left:8%;
+  border: 1%;
+  margin: 1%;
+
+}
+
+/* #chimney{
+  width: 10px;
+  height:10px;
+  background-color: red;
+  z-index: 1;
+}
+
+#window{
+  width: 15px;
+  height: 15px;
+  background-color: darkslategray;
+  z-index: 2;
+} */
+
